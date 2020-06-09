@@ -23,6 +23,10 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.get('/', (request, response) => {
+	console.log("Webhook is Working!");
+});
+
 app.post('/webhook', (request, response) => {
 const intent = request.body.queryResult.intent.displayName;
 console.log(intent);
