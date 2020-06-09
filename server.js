@@ -12,10 +12,10 @@ const port = process.env.PORT || 3000;
 
 let mysql  = require('mysql');
 let connection = mysql.createConnection({
-  host    : "localhost",
-  user    : "root",
-  password: "",
-  database: "sssdb"
+  host    : "us-cdbr-east-05.cleardb.net",
+  user    : "b863d543148236",
+  password: "8cbe382",
+  database: "heroku_ce03a3ac9c330d6"
 });
 
 var bodyParser = require('body-parser');
